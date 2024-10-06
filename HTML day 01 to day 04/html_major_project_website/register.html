@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Registration Form</title>
+</head>
+<body>
+
+    <table  width="100%">
+
+        <tr>
+
+        
+
+          <td width="20%">
+            <img src="./asserts/logo.png" alt="" width="200px" />
+          </td>
+          <td width="15%"  align="center">
+            <hr>
+            <a href="./home.html">Home</a>
+            <hr>
+          </td>
+
+          <td width="15%"  align="center">
+            <hr>
+            <a href="./gallery.html">Gallery</a>
+            <hr>
+          </td>
+          <td width="15%"  align="center">
+            <hr>
+            <a href="./services.html">Services</a>
+            <hr>
+          </td>
+
+          <td width="15%" align="center">
+            <hr>
+            <a href="./register.html">Registration</a>
+            <hr>
+          </td>
+
+          <td width="20%"></td>
+        </tr>
+      </table>
+
+    <!-- <h2></h2> -->
+
+   <center>
+    <table width="70%">
+        <tr>
+            <td>
+               <center>
+                <form action="">
+                    <fieldset>
+                        <h1>Book Your Dream Room  </h1>
+                        
+                        <fieldset>
+                            <legend><h3>Guest Contact Information</h3> </legend>
+                            <table  width="100%" border="0" cellpadding="10">
+                              
+                                <tr>
+                                    <td>
+                                        <label for="">Title :</label>
+                                    </td>
+                                    <td> 
+                                        <select name="" id="">
+                                            <option value="select" disabled selected>Select</option>
+                                            <option value="Mr.">Mr.</option>
+                                            <option value="Mrs.">Mrs.</option>
+                                            <option value="Dr.">Dr.</option>
+                                            <option value="Miss">Miss</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <Label>Full Name :</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Full Name Enter Here ">
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td>
+                                        <label for="">Phone Number : </label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" minlength="10" maxlength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="9124567890">
+                                    </td>
+                                    <td>
+                                        <label for="">E-mail :  </label>
+                                    </td>
+                                    <td>
+                                        <input type="email">
+                                    </td>
+                                    
+                                 </tr>
+            
+                
+                                 <tr>
+                                    
+                                    <td>
+                                        <Label>Date of Birth :</Label>
+                                    </td>
+                                    <td>
+                                        <input type="date" />
+                                    </td>
+                                    <td>
+                                        <Label>customer Code : </Label>
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                
+                                 </tr>
+                
+                                  <tr>
+                                    <td>
+                                        <label for=""> 
+                                            Address
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Street Address">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Street Address Line 2">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Landmark">
+                                    </td>
+                                  </tr>
+                
+                            
+                
+                                    
+                                    
+                
+                            </table>
+                        </fieldset>
+            
+                        <br>
+                        
+            
+                        <fieldset>
+                            <legend><h3>Reservation Details </h3></legend>
+                            <table  width="100%" border="0" cellpadding="10">
+                                
+                                     
+                                       <tr>
+                                        <td >
+                                            <label for="">Arrival Date : </label>
+                                        </td>
+                                        <td><input type="date"></td>
+                                        <td>
+                                            Departure  Date : 
+                                        </td>
+                                        <td><input type="date" max="29-09-2024" min="27-09-2024"></td>
+                                       </tr>
+                
+                                       <!-- 10th row  -->
+                
+                                       <tr>
+                                        <td>
+                                            Number of Adult's :
+                                        </td>
+                                        <td><input type="number"></td>
+                                        <td>
+                                            Number of Children's :
+                                        </td>
+                                        <td><input type="number"></td>
+                                       </tr>
+                                       
+                                       <!-- 11th row  -->
+                
+                                       <td><label for="room_type">Room Type:</label></td>
+                                       <td>
+                                           <select name="room_type" id="room_type" required>
+                                               <option value="">Please Select</option>
+                                               <option value="Single">Single</option>
+                                               <option value="Double">Double</option>
+                                               <option value="Suite">Suite</option>
+                                           </select>
+                                       </td>
+                                       <td><label for="room_number">Room Number:</label></td>
+                                       <td><input type="text" name="room_number" id="room_number" required></td>
+                                   </tr>
+                       
+                                   <tr>
+                                       <td><label for="extra_bed">Extra Bed:</label></td>
+                                       <td>
+                                           <label><input type="radio" name="extra_bed" value="yes" required> Yes</label>
+                                           <label><input type="radio" name="extra_bed" value="no" required> No</label>
+                                       </td>
+                                   </tr>
+                       
+                                   <tr>
+                                       <td><label for="additional_request">Any additional request:</label></td>
+                                       <td colspan="3"><textarea name="additional_request" id="additional_request" rows="5" cols="80" placeholder="Type here..." maxlength="200"></textarea></td>
+                                   </tr>
+                
+                                    <!-- Submit Buttons -->
+                            <tr>
+                                <td colspan="4">
+                                    <center>
+
+                                        <input type="submit" value="Submit">
+                                    </center>
+                                </td>
+                                
+                            </tr>
+                
+                            </table>
+                        </fieldset>
+            
+                        
+                    </fieldset>
+                </form>
+               </center>
+            </td>
+        </tr>
+    </table>
+   </center>
+
+   <br>
+      <hr>
+      <br>
+
+      <center>
+        <table width="80%" border="2" 
+        style="border-collapse: collapse;" cellpadding="10px">
+          <tr>
+              
+              <td width="30%">
+                    <center>
+                    <img src="./asserts/logo.png" alt="" width="200px" />
+                </center>
+                </td>
+                <td width="70%">
+           
+           
+                  <center>
+    
+            <footer>
+              <table border="0" width="100%">
+                <tr>
+                 
+                  <td>
+                    <h4>Contact Us</h4>
+                    <p>Email: contact@sunnybeachresort.com</p>
+                    <p>Phone: +1 (234) 567-8900</p>
+                    <p>Address: 123 Paradise Lane, Beach City, CA 90210</p>
+                  </td>
+                  <td>
+                    <h3>Sunny Beach Resort</h3>
+                    <p>Relax, Rejuvenate, and Reconnect</p>
+                    <p>Perfect Place for Your Comfort</p> 
+                  </td>
+                  <td>
+                    <h4>Quick Links</h4>
+                    <table border="0">
+                      <tr><td><a href="./home.html">Home</a></td></tr>
+                      <tr><td><a href="./gallery.html">Gallery</a></td></tr>
+                      <tr><td><a href="./services.html">Services</a></td></tr>
+                      <tr><td><a href="./register.html">Registration</a></td></tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" align="center">
+                    <p>&copy; Made by Gagan Baghel 2024 | All Rights Reserved to @SBR</p>
+                  </td>
+                </tr>
+              </table>
+            </footer>
+            
+            </center>
+        </td>
+           
+            
+          </tr>
+        </table>
+      </center>
+</body>
+</html>

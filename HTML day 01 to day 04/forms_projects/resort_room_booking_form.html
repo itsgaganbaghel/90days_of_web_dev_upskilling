@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex HTML Form - Student Assessment</title>
+  </head>
+  <body>
+    <form accept="">
+      <fieldset>
+        <legend>
+          <strong>Required Information of the Employee </strong>
+        </legend>
+
+        <!-- Personal Information Section -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <!-- Name -->
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            required
+            maxlength="50"
+            placeholder="Enter your first name"
+          />
+          <br /><br />
+
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            required
+            maxlength="50"
+            placeholder="Enter your last name"
+          />
+          <br /><br />
+
+          <!-- Gender -->
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+          <br /><br />
+
+          <!-- Date of Birth -->
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+          <br /><br />
+
+          <!-- Email -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+          <br /><br />
+
+          <!-- Phone Number -->
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="10-digit phone number"
+            required
+          />
+          <br /><br />
+        </fieldset>
+        <br />
+        <!-- Education Section -->
+        <fieldset>
+          <legend>Educational Background</legend>
+
+          <!-- Degree -->
+          <label for="degree">Highest Degree:</label>
+          <select id="degree" name="degree" required>
+            <option value="">Select Degree</option>
+            <option value="bachelors">Bachelor's</option>
+            <option value="masters">Master's</option>
+            <option value="phd">Ph.D.</option>
+          </select>
+          <br /><br />
+
+          <!-- Institution -->
+          <label for="institution">Institution Name:</label>
+          <input
+            type="text"
+            id="institution"
+            name="institution"
+            required
+            maxlength="100"
+            placeholder="Enter your institution's name"
+          />
+          <br /><br />
+
+          <!-- Graduation Year -->
+          <label for="gradyear">Year of Graduation:</label>
+          <input
+            type="number"
+            id="gradyear"
+            name="gradyear"
+            min="2021"
+            max="2025"
+            required
+          />
+          <br /><br />
+        </fieldset>
+
+        <br />
+        <!-- Skills Section -->
+        <fieldset>
+          <legend>Technical Skills</legend>
+
+          <!-- Programming Languages -->
+          <label for="languages"
+            >Programming Languages Known (select multiple):</label
+          >
+          <select id="languages" name="languages" multiple size="4" required>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="Tailwind-CSS">Tailwind-CSS</option>
+            <option value="React JS">React Js</option>
+          </select>
+          <br /><br />
+
+          <!-- Skills Proficiency -->
+          <label for="proficiency">Rate Your Web Development Skills:</label>
+          <input
+            type="range"
+            id="proficiency"
+            name="proficiency"
+            min="1"
+            max="10"
+            step="1"
+          />
+          <br /><br />
+
+          <!-- Certifications -->
+          <label for="certifications">Upload your all Certification Documents: </label>
+          <input
+            type="file"
+            id="certifications"
+            name="certifications"
+            accept=".pdf,.doc,.docx"
+            multiple="true"
+          />
+          <br /><br />
+        </fieldset>
+        <br />
+        <!-- Project Experience Section -->
+        <fieldset>
+          <legend>Project Experience</legend>
+
+          <!-- Project Title -->
+          <label for="projecttitle">Project Title:</label>
+          <input
+            type="text"
+            id="projecttitle"
+            name="projecttitle"
+            required
+            maxlength="100"
+            placeholder="Enter project title"
+          />
+          <br /><br />
+
+          <!-- Project Description -->
+          <label for="projectdesc">Project Description:</label>
+          <textarea
+            id="projectdesc"
+            name="projectdesc"
+            rows="4"
+            cols="50"
+            required
+            placeholder="Describe your project"
+          ></textarea>
+          <br /><br />
+
+          <!-- Project Role -->
+          <label for="projectrole">Your Role in the Project:</label>
+          <input
+            type="text"
+            id="projectrole"
+            name="projectrole"
+            required
+            maxlength="50"
+          />
+          <br /><br />
+
+          <!-- Team Size -->
+          <label for="teamsize">Team Size:</label>
+          <input
+            type="number"
+            id="teamsize"
+            name="teamsize"
+            min="1"
+            max="20"
+            required
+          />
+          <br /><br />
+        </fieldset>
+        <br />
+        <!-- Preferences Section -->
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <!-- Job Location -->
+          <label for="location">Preferred Job Location:</label>
+          <input type="checkbox" id="ny" name="location" value="Noida" />
+          <label for="ny">Noida</label>
+          <input type="checkbox" id="sf" name="location" value="Delhi" />
+          <label for="sf">Delhi</label>
+          <input type="checkbox" id="la" name="location" value="Pune" />
+          <label for="la">Pune</label>
+          <br /><br />
+
+          <!-- Available to Start -->
+          <label for="startdate">Pick Your Joining Date : </label>
+          <input type="date" id="startdate" name="startdate" min="2024-09-26" max="2024-10-5" required />
+          <br /><br />
+
+          <!-- Re-locate Work -->
+          <label for="remote">Are You Open to Re-locate?</label>
+          <input type="radio" id="yes" name="remote" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="remote" value="no" />
+          <label for="no">No</label>
+          <br /><br />
+        </fieldset>
+        <br />
+        <!-- Terms and Conditions -->
+        <fieldset>
+          <legend>Agreement</legend>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            I agree to the terms and conditions.
+          </label>
+          <br /><br />
+        </fieldset>
+
+        <br />
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
