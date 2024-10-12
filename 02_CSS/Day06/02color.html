@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+  </head>
+  <body style="background-color: black; width: 100%; height: 100%">
+    <!-- 
+    
+    ! colors 
+
+        it is used to beautify the content of the webpage as well as it helps add the esthetics in the web page
+        
+        ? it is also a css property SO, 
+        SYNTAX : 
+        Selector {
+                    property name : value ; 
+                 } 
+    
+        we have multiple ways to pass the value 
+        1. Named color 
+        2. Hsl 
+        3. Hsla 
+        4. RGB 
+        5. RGBA
+        6. Hexadecimal 
+        7. Hexadecimal with alpha
+
+        1. Named color : html/css support 140 named colors , and we can use all of them by just passing the name of the color as a value.
+        2. Hsl : it is basically combination of colors.
+                H : stand for the hue 
+                S : stand for the saturation
+                L : stand for the lightness
+                ! syntax : 
+                        hsl( hue, saturation, lightness )
+
+                Hue : basically it is the color wheel , in which we can access the color by using the degrees i.e., 
+                        at 0 deg and 360 deg -> we have  red color
+                        at 120 deg -> we have green color
+                        at 240 deg -> we have blue color
+                        between 0 and 360 deg -> we have these 3 main color red, green and blue 
+                        between all these 3 colors we can make multiple color's
+                Saturation : shades of colors  { 0%{gray} to 100%{full color} }
+                Lightness : how bright or dark shade of the color , { 0% -> darkest } { 100% -> lightest }
+        3. HSLA : it is the extension of the HSL , here A stand for the Alpha , means transparency or opacity of the color
+        4. RGB : stand for the Red , Green and Blue , Each of 3 have the value between 0 to 255
+                 0   { no color , white }
+                 255 { full color }
+
+               ! syntax : rgb( red, green, blue);
+            red color   : rgb( 255 , 0 , 0 );
+            green color : rgb(0 , 255 , 0 );
+            blue color  : rgb(0 , 0, 255 );
+        5. RGBA : it is the extension of the RGB , here A stand for the Alpha , means transparency or opacity of the color
+            !syntax : rgba( red, green, blue , alpha ) 
+                ? alpha values is between 0 to 1 
+                0 -> full transparency  
+                1 -> opaque color
+        6. Hexadecimal : it is a way that widely used for passing the colors value 
+                        ~ by this we can generate the multiple colors
+                        ~ hexadecimal values start with the # symbol
+                        ~ we have to pass the 3 values , red , green & blue
+                        ~ in the form of alphanumeric characters
+                        ~ number 0 to 9 & alphabets a to f 
+
+                      !syntax : #red green blue * there is no space between red green and blue 
+                      ? red   : #ff0000
+                      ? green : #00ff00
+                      ? blue  : #0000ff
+
+                      * if we have the both the values same  like., ff , 00 , ee, 11 etc then 
+                      ! shorthand notation > #f0e
+                      ! it is not a case sensitive
+        7. Hexadecimal with alpha : it is the extension of the hexadecimal , 
+                                    ~ alpha is transparency 
+                                    ! syntax : #RRGGBB80
+                                    ~ value is between 0 to 100 
+
+
+
+    -->
+
+    <div id="named" style="color: cadetblue;">Lorem, ipsum.</div>
+    <div id="hexadecimal" style="color: #ffed99;">Lorem, ipsum.</div>
+    <div id="hexadecimalalpha" style="color: #ff999995;">Lorem, ipsum.</div>
+    <div id="hsl" style="color: hsl(300 , 100% , 80%);">Lorem, ipsum.</div>
+    <div id="hsla" style="color: hsl(24, 100%, 50% , 0.1);">Lorem, ipsum.</div>
+    <div id="rgb" style="color: rgb(255, 90, 90);">Lorem, ipsum.</div>
+    <div id="rgba" style="color: rgb(50 , 89 , 180 , 0.5);">Lorem, ipsum.</div>
+  </body>
+</html>

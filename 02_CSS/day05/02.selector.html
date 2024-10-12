@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<body>
+    <!--  
+    ? selectors 
+    these ae the pattern used to select and target specific html elements that you want to style.
+
+    1. simple selector
+        1. tagName selector { eg -> h1 , p , section }
+        2. className selector { . }
+        3. Id selector { # }
+        4. Universal selector  { * }
+        5. grouping selector -> write the selectors separated by commas
+
+    2. combinator selector
+        1. Descendant selector ( space ) 
+            it selects each and every child element of the selector, nested one as well.
+        2. Child selector ( > )
+            it selects that child element of specified selector
+        3. Adjacent selector ( + )
+            it selects only 1 html element that comes just after specified selector 
+        4. General selector ( ~ )
+            it selects all siblings of specified selector
+
+    3. Pseudo Class selector
+        1. Dynamic Pseudo Class selector
+             1. :Link  
+                -> unvisited link styling
+             2. :visited
+                -> styling after the link is visited and user revisit to the website 
+             3. :active
+                -> styling when the link is active or when you press the right mouse button 
+             4. :hover
+                -> styling when you hover over the link 
+             5. :focus 
+                -> when you press right click in the input field
+            
+        2. Structural Pseudo Class selector
+             1. :first-child
+                -> select the very first child of the specified selector 
+             2. :last-child
+                -> select the very last child of the specified selector 
+             3. :nth-child
+                -> select the nth number of child of the  specified selector 
+             4. :first-of-type
+                -> select the very last type of the specified selector 
+             5. :last-of-type
+                -> select the very last type of the specified selector 
+
+        3. UI Element Pseudo Class selector
+             1. :enabled
+                -> when the input is enabled 
+             2. :disabled
+                -> when the input is disabled 
+             3. :checked
+                -> when the input is Checked
+
+    4. Pseudo Element selector
+         1. ::before
+             -> we can add the content before the main content or original , make a new div and utilize that as a separate element 
+         2. ::after
+             -> we can add the content after the main content or original , make a new div and utilize that as a separate element 
+         3. ::selection
+             => we can change the selected text color or bg color
+         4. ::marker
+             => we can create a custom lists bullets by adding icon , img
+         5. ::first-line
+             => we can perform the custom css on the first line of the content of the selected element
+         6. ::first-letter
+             => we can perform the custom css on the first letter of the content of the selected element
+         7. ::file-selector-button
+             => we can perform the custom css on the the file type input field 
+         8. ::placeholder
+             => we can perform the custom css on the placeholder 
+         9. ::placeholder-shown
+              => we can perform the custom css on the selected input field , if the placeholder is visible 
+
+    5. Attribute selector
+         1. [attribute] -> select by only attribute name 
+         2. [attribute="value"] -> select by only attribute name with value 
+         3. [attribute~="value"] -> select only those value who have the value that are separated by space 
+         4. [attribute^="value"] -> select those whose value is start with this specific value 
+         5. [attribute$="value"] ->  select those whose value is end with this specific value 
+         6. [attribute*="value"] -> select those whose value is present with this specific value throughout the value
+         7. [attribute|="value"] -> select those whose value is hyphen in the start or end  with this specific value 
+
+    -->
+    
+</body>
+</html>
